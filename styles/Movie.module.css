@@ -1,0 +1,207 @@
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: none;
+    padding-bottom: 0px;
+  }
+}
+
+.heroInfo {
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding-block: 1rem;
+  padding-bottom: 0rem;
+  padding-inline: 2rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .heroInfo {
+    grid-row: 1/2;
+    padding-block: 4.5;
+    justify-content: center;
+    padding-inline: 5rem;
+  }
+}
+
+.heroInfo h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.heroInfo h4 {
+  color: var(--secondary-color-text);
+  margin-bottom: 1rem;
+}
+
+.heroInfo p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.heroInfoEtiquets {
+  display: flex;
+  gap: 1rem;
+}
+
+.heroInfoEtiquets p {
+  border: 1px solid #fff;
+  padding-inline: 5px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.heroInfoEtiquets p:hover {
+  background-color: rgb(119, 119, 119);
+}
+
+.heroButtons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heroButtons div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heroButtons div i {
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.heroButtons div i:hover {
+  color: var(--color-button-info-hover);
+}
+
+/* InfoDetails */
+.info {
+  display: grid;
+  grid-template-rows: repeat(3, minmax(250px, 1fr));
+  align-items: flex-start;
+  padding-block: 2rem;
+  gap: 4rem;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 768px) {
+  .info {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-template-rows: none;
+    padding-block: 5rem;
+  }
+}
+
+.infoDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.4rem;
+}
+
+.infoDetails h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  padding-top: 0.5rem;
+}
+
+.infoDetails ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.infoDetails ul li {
+  display: flex;
+  color: #fff;
+  gap: 0.5rem;
+}
+
+.infoDetails ul li span {
+  font-weight: 700;
+}
+
+.infoGrapich {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.infoGrapichVote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.infoGrapich h2 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.infoGrapich h2::after,
+.infoDetails h2::after,
+.infoCompanies h2::after {
+  display: block;
+  content: '';
+  height: 0.5rem;
+  width: 100%;
+  background-image: linear-gradient(90deg, #ec2b38 0, #ec2b38 50%, #ec2b38 0, #ec2b38);
+}
+
+.infoGrapich h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.infoGrapich img {
+  width: 5rem;
+}
+
+.infoCompanies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.infoCompanies h2 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.infoCompaniesLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.infoCompaniesLogo p {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+}

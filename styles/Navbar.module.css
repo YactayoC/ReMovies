@@ -1,0 +1,136 @@
+.navbar {
+  padding-inline: 2.5rem;
+  padding-block: 0.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbarDesktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbarDesktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.navbarDesktop ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: #fff;
+}
+
+.navbarDesktop ul h2 {
+  font-size: 2.5rem;
+  color: var(--color-logo);
+  cursor: pointer;
+}
+
+.navbarDesktop ul li {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbarDesktop ul li:hover {
+  color: rgb(163, 162, 162);
+}
+
+.navbarDesktop ul li img {
+  width: 2.5rem;
+}
+
+/* Hamburguer */
+.navbarHamburguer {
+  display: block;
+
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .navbarHamburguer {
+    display: none;
+  }
+}
+
+.navbarHamburguer i {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbarHamburguer i:hover {
+  color: rgb(163, 162, 162);
+}
+
+.navbarHamburguerMenu {
+  justify-content: center;
+  color: #fff;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.navbarHamburguerMenu ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.navbarHamburguerMenu ul li {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbarHamburguerMenu ul li:hover {
+  color: rgb(163, 162, 162);
+}
+
+.navbarHamburguerMenuIcons {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navbarHamburguerMenuIcons img {
+  width: 3rem;
+  cursor: pointer;
+}
+
+.navbarHamburguerMenuIcons i {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbarHamburguerMenuIcons i:hover {
+  color: rgb(163, 162, 162);
+}
+
+/*  Mobile  */
+.navbarMobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navbarMobile {
+    display: none;
+  }
+}
+
+.navbarMobile h2 {
+  font-size: 2.5rem;
+  color: var(--color-logo);
+  cursor: pointer;
+}

@@ -1,0 +1,76 @@
+.divForm {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 515px;
+  padding: 20px 0 30px;
+  margin-top: 2rem;
+  width: 25rem;
+  padding-inline: 2rem;
+  animation: fadeIn 0.8s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.divForm h2 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.formGroup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.formGroup input {
+  background-color: var(--color-input);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 15px;
+  outline: none;
+  padding: 10px;
+  width: 15rem;
+}
+
+.formGroup p {
+  color: #fff;
+  width: 5rem;
+  font-size: 1rem;
+}
+
+.formGroup span {
+  text-align: right;
+  width: 100%;
+  color: #737373;
+  margin-top: -2rem;
+}
+
+.formGroup span a {
+  color: #fff;
+}

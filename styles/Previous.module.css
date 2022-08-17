@@ -1,0 +1,74 @@
+/* Background */
+.background {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0, transparent 60%, rgba(0, 0, 0, 0.8)),
+    url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/4DPM42K2SNBQJIFZE7AKFJNOC4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.background > div {
+  background: rgba(0,0,0,0.1);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5% 0rem 5%;
+}
+
+.navbar h2 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--color-logo);
+  cursor: pointer;
+}
+
+/* Index */
+.heading {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding-inline: 24%;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 2rem;
+}
+
+.heading h1 {
+  font-size: 40px;
+  line-height: 50.4px;
+}
+
+.heading p {
+  font-size: 20px;
+  margin-block: 10px;
+}
+
+.heading span {
+  font-size: 15.2px;
+}
+
+@media (min-width: 768px) {
+  .heading h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+  }
+
+  .heading p {
+    font-size: 26px;
+    margin-block: 10px;
+  }
+  
+  .heading span {
+    font-size: 19.2px;
+  }
+}
