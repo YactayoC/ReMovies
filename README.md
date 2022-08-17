@@ -21,10 +21,8 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-Movie project, making use of the TMDB API 
-redux styled-components next date-fns redux-toolkit 
 
 ## Preview 📷
-![image](https://user-images.githubusercontent.com/89726167/180655946-b107ef5d-1eb7-4c27-b044-e4f73ab65c0d.png)
-![image](https://user-images.githubusercontent.com/89726167/175652537-14eb7065-2806-464d-be8b-df43ab6fdbc2.png)
-![image](https://user-images.githubusercontent.com/89726167/175652606-77038da4-c5f1-4870-849d-966391b6eb8c.png)
+![image](https://user-images.githubusercontent.com/89726167/185007024-60b38f9f-e89e-4e8b-a9c4-14123378a910.png)
+![image](https://user-images.githubusercontent.com/89726167/185007038-b0417ced-b6fd-4e9f-bf29-1de439fb0079.png)
+![image](https://user-images.githubusercontent.com/89726167/185007077-3850cde7-3ed1-4a46-ba50-5db2b2aed56d.png)
